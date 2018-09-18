@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var emojiCollection: [String: String] = [
+        "🎧": "Music Headphones",
+        "☄️": "Comet",
+        //"💨": "Wind Style",
+        "🔥": "Fire Style"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +27,25 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showMessage (sender: UIButton) {
-        let alertController = UIAlertController(title: "Welcome My First App", message: "Hello World!!", preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-        present(alertController, animated: true, completion: nil)
+        let selectedButton = sender
+        var message: String?
+        
+        if let wordToLookup = selectedButton.titleLabel?.text {
+            message = emojiCollection[wordToLookup]
+        }
+        
+        var alertController: UIAlertController?
+        
+        if let message = message {
+            alertController = UIAlertController(title: "Meaning", message: message, preferredStyle: UIAlertControllerStyle.alert)
+        } else {
+            alertController = UIAlertController(title: "Meaning", message: "Hello World!!", preferredStyle: UIAlertControllerStyle.alert)
+        }
+        
+        if let alertController = alertController {
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            present(alertController, animated: true, completion: nil)
+        }
     }
 }
 
