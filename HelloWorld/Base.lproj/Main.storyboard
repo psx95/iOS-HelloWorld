@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,24 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikj-fj-wRG">
-                                <rect key="frame" x="16" y="20" width="383" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.83492551813471505" green="0.18812694942364902" blue="0.12971506417474893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
-                                <state key="normal" title="🎧">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUq-bO-cHh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlD-Wn-Vcq">
-                                <rect key="frame" x="16" y="239" width="383" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlD-Wn-Vcq">
+                                <rect key="frame" x="15" y="290" width="345" height="96"/>
                                 <color key="backgroundColor" red="0.83492551810000004" green="0.18812694939999999" blue="0.12971506420000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <state key="normal" title="💨">
@@ -42,9 +29,8 @@
                                     <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bZC-YP-s4k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrd-kt-vNO">
-                                <rect key="frame" x="16" y="131" width="383" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrd-kt-vNO">
+                                <rect key="frame" x="15" y="167" width="345" height="96"/>
                                 <color key="backgroundColor" red="0.912645725388601" green="0.83632706566255965" blue="0.42636591955792075" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <state key="normal" title="🔥">
@@ -54,9 +40,25 @@
                                     <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5oc-Ro-qxs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NK0-VT-umk">
-                                <rect key="frame" x="16" y="352" width="383" height="96"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikj-fj-wRG">
+                                <rect key="frame" x="15" y="44" width="345" height="96"/>
+                                <color key="backgroundColor" red="0.83492551813471505" green="0.18812694942364902" blue="0.12971506417474893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <state key="normal" title="🎧">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUq-bO-cHh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Emoji Dictionary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7S-cQ-uus">
+                                <rect key="frame" x="136" y="737" width="219" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NK0-VT-umk">
+                                <rect key="frame" x="15" y="413" width="345" height="96"/>
                                 <color key="backgroundColor" red="0.9126457254" green="0.83632706570000004" blue="0.42636591959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <state key="normal" title="☄️">
@@ -68,12 +70,33 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ikj-fj-wRG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3XW-Ps-Lhb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O7S-cQ-uus" secondAttribute="trailing" constant="20" id="82Y-vs-VYD"/>
+                            <constraint firstItem="rlD-Wn-Vcq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dap-99-K6P"/>
+                            <constraint firstItem="NK0-VT-umk" firstAttribute="top" secondItem="rlD-Wn-Vcq" secondAttribute="bottom" constant="27" id="KVl-1n-Spx"/>
+                            <constraint firstItem="rlD-Wn-Vcq" firstAttribute="top" secondItem="Rrd-kt-vNO" secondAttribute="bottom" constant="27" id="L89-Pd-3ms"/>
+                            <constraint firstItem="rlD-Wn-Vcq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="OoG-1F-VbK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NK0-VT-umk" secondAttribute="trailing" constant="15" id="Pel-ZT-4Sv"/>
+                            <constraint firstItem="ikj-fj-wRG" firstAttribute="trailing" secondItem="Rrd-kt-vNO" secondAttribute="trailing" id="WiS-H9-wnh"/>
+                            <constraint firstItem="ikj-fj-wRG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Xeq-W7-PXL"/>
+                            <constraint firstItem="ikj-fj-wRG" firstAttribute="leading" secondItem="Rrd-kt-vNO" secondAttribute="leading" id="Zh4-eL-83h"/>
+                            <constraint firstItem="Rrd-kt-vNO" firstAttribute="top" secondItem="ikj-fj-wRG" secondAttribute="bottom" constant="27" id="afD-Mc-tQx"/>
+                            <constraint firstItem="O7S-cQ-uus" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="als-h8-IUj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rrd-kt-vNO" secondAttribute="trailing" constant="15" id="d8N-i4-gDc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="O7S-cQ-uus" secondAttribute="bottom" constant="20" id="eOB-BK-FqL"/>
+                            <constraint firstItem="NK0-VT-umk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="eRG-wF-SUa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rlD-Wn-Vcq" secondAttribute="trailing" constant="15" id="hCU-Sw-Y6m"/>
+                            <constraint firstItem="Rrd-kt-vNO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="jHi-Zb-wfE"/>
+                            <constraint firstItem="rlD-Wn-Vcq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lTX-iD-41J"/>
+                            <constraint firstItem="Rrd-kt-vNO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yQF-dQ-6dQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="132.88043478260872"/>
+            <point key="canvasLocation" x="139.13043478260872" y="132.06521739130434"/>
         </scene>
     </scenes>
 </document>
